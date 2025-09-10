@@ -5,8 +5,8 @@ Back End: ExpressJs >nodemon index.js
 Connection: Axios & Cors
 Database: MySQL
 
-[Make sure to add your own database name, username and password in the code
-can use MySQL workbench to create 2 tables in your database]
+[Make sure to add your own database name, username and password in the code,
+can use MySQL workbench and create 2 tables in your database]
 
 create table TEUsers(
 username varchar(50),
