@@ -1,0 +1,12 @@
+.footBody{
+    height: 30px;
+    /* background-color: #161a1c; */
+    background-color: black;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+    color: #475059;
+    font-size: 10px;
+}

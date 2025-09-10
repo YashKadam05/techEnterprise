@@ -1,0 +1,139 @@
+.signUpBody form {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 0.5px solid #edf1f6;
+    border-radius: 10px;
+    z-index: 7;
+    /* margin-bottom: 80px; */
+}
+
+.signUpBody h1 {
+    color: #edf1f6;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.signUpBody input {
+    margin: 5px;
+    padding: 10px 5px;
+    width: 300px;
+    border: none;
+    border-bottom: 1.5px solid #edf1f6;
+    background-color: transparent;
+    color: #edf1f6;
+    font-size: 15px;
+}
+
+.signUpBody input::placeholder {
+    color: #edf1f6;
+}
+
+.signUpBody input:focus {
+    outline: none;
+}
+
+.signUpBody button {
+    margin: 5px;
+    margin-top: 20px;
+    padding: 10px 5px;
+    width: 314px;
+    color: #161a1c;
+    background-color: #edf1f6;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.signUpBody .formTxt {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #edf1f6;
+    width: 314px;
+    padding-top: 10px;
+}
+
+.signUpBody a {
+    text-decoration: none;
+    color: #edf1f6;
+}
+
+.signUpBody a:hover {
+    text-decoration: underline;
+}
+
+.signUpBody {
+    height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+}
+
+.signUpBody #backButton {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    font-size: 20px;
+    color: #edf1f67f;
+}
+.signUpBody #backButton:hover {
+    transition: 0.5s linear;
+    color: #edf1f6;
+}
+/* .signUpBody #backButton {
+        top: 2%;
+        left: 4%;
+    } */
+
+@media (max-width:550px) {
+
+    .signUpBody h1 {
+        font-size: 30px;
+    }
+
+    .signUpBody input,
+    .signUpBody form,
+    .signUpBody .formTxt {
+        width: 280px;
+        font-size: 13px;
+    }
+
+    .signUpBody button {
+        width: 290px;
+        font-size: 13px;
+    }
+
+    .signUpBody form {
+        padding: 20px;
+        margin-bottom: 200px;
+    }
+
+    .signUpBody #backButton {
+        top: 2%;
+        left: 4%;
+    }
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */

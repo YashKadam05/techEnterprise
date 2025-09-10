@@ -1,0 +1,143 @@
+.hero {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100vw; */
+    padding-top: 90px;
+}
+
+.hero .heroText {
+    margin-left: 120px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #edf1f6;
+}
+
+.hero #secondHead {
+    margin-top: -17px;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: #7f8c9a;
+}
+
+.hero p {
+    color: #475059;
+    margin-bottom: 25px;
+    font-size: 15px;
+    width: 280px;
+}
+
+.hero .heroText a {
+    text-decoration: none;
+    color: #edf1f6;
+    background-image: linear-gradient(to right, #161a1c, black);
+    padding: 8px 65px;
+    border-radius: 20px;
+}
+
+.hero img {
+    height: 400px;
+    margin-top: 40px;
+    animation: float 6s ease-in-out infinite;
+    margin-right: 130px;
+}
+
+@keyframes float {
+    0% {
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translatey(0px);
+    }
+
+    50% {
+        /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+        transform: translatey(-20px);
+    }
+
+    100% {
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translatey(0px);
+    }
+}
+
+@media (max-width:1050px) {
+    .hero img {
+        margin-right: 0px;
+    }
+
+    .hero .heroText {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:650px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 90px;
+    }
+
+    .hero .heroText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero h1,
+    .hero p {
+        text-align: center;
+    }
+
+    .hero #secondHead {
+        margin-bottom: 12px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .hero img {
+        height: 300px;
+        margin-top: 60px;
+    }
+    .hero .heroText a {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:350px) {
+    .hero img {
+        height: 230px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero #secondHead {
+        margin-top: -10px;
+        margin-bottom: 7px;
+    }
+
+    .hero p {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .hero a {
+        padding-left: 62px;
+        padding-right: 62px;
+    }
+}
